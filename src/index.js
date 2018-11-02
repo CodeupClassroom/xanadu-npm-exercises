@@ -1,9 +1,18 @@
 const $ = require('jquery');
 
-const sayHi = () => {
-    console.log("Howdy!");
-}
+import {niceMessage} from "./say-hello.js";
 
-sayHi();
+// const { niceMessage } = require("./say-hello"); // module solution
 
-$("body").append("<h2>jQuery Successfully installed!</h2>");
+// ============ PREVIOUS LECTURE NOTES
+// const sayHi = () => {
+//     console.log("Howdy!");
+// }
+//
+// sayHi();
+//
+// $("body").append("<h2>jQuery Successfully installed!</h2>");
+
+// ============ MODULES SOLUTION
+
+console.log(niceMessage());
